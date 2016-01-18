@@ -1,0 +1,81 @@
+body {
+    touch-action: auto !important; /* Fixes scrolling on mobile devices */
+}
+
+/* Bootstrap style fixes */
+.sel-toolbar-span-icon { 
+    top: -10px; 
+}
+.bubble.range-bubble, .qv-listbox-popover, .qv-listbox-popover .toolbar-wrapper {
+    -webkit-box-sizing: initial;
+    -moz-box-sizing: initial;
+    box-sizing: initial;
+}
+.qv-listbox-popover .content {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.qvt-selections.qv-panel-subtoolbar.qv-panel-current-selections {
+    font-family: 'QlikView Sans', sans-serif; 
+    line-height: normal; 
+    font-size: 13px;
+}
+.qvt-selections.qv-panel-subtoolbar.qv-panel-current-selections a:hover, 
+.qvt-selections.qv-panel-subtoolbar.qv-panel-current-selections a:focus {
+    text-decoration: none;
+}
+
+
+/* Hide right button panel on CurrentSelections bar, hide left button panel at mobile size */
+.buttons-end.borderbox {
+    display: none;
+}
+.qv-panel-current-selections .qv-selections-pager {
+    padding-right: 0px;
+}
+@media (max-width: 600px) {
+    .buttons.borderbox {
+        display: none;
+    }
+    .qv-panel-current-selections .qv-selections-pager {
+        padding-left: 0px;
+    }
+}
+
+/* So jumbotron clears selection bar */
+.jumbotron {
+    margin-top: 36px;
+}
+
+/* Modify bootstrap container */
+.container {
+    width: 98% !important;
+}
+
+/* Styles needed for rain loader */
+.rain {
+    position: relative;
+}
+.tab-content {
+    display: none;
+}
+
+/* Set heights for chart areas */
+.qvobject, .qvplaceholder {
+    height: 400px;
+    border: 1px solid #ccc;
+}
+.kpi {
+    height: 200px;
+}
+.filters {
+    height: 160px;
+}
+.large-chart {
+    height: 800px;
+}
+.table {
+    height: 1000px;
+}

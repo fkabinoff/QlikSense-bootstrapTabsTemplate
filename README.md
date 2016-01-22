@@ -3,6 +3,8 @@ QlikSense-BootstrapTabsTemplate
 
 This template for Qlik Sense 2.x features Bootstrap tabs.
 
+Demo at http://webapps.qlik.com/tabs-template-demo/tabsTemplateDemo.html
+
 *********************************
 Installation & Use
 *********************************
